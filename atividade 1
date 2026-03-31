@@ -26,15 +26,15 @@ int main() {
 
                 if (fantasia == 'S' || fantasia == 's') {
                     printf("Você deve assistir Game of Thrones\n");
-                } else {
+                } else if{
                     printf("Desculpe! Não tenho série para indicar\n");
                 }
 
-            } else {
+            } else if{
                 printf("Desculpe! Não tenho série para indicar\n");
             }
 
-        } else {
+        } else if{
             printf("Desculpe! Não tenho série para indicar\n");
         }
 
@@ -76,7 +76,7 @@ int main() {
 
             if (crime == 'S' || crime == 's') {
                 printf("Você deve assistir Dexter\n");
-            } else {
+            } else if {
                 printf("Desculpe! Não tenho série para indicar\n");
             }
         }
