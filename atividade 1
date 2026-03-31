@@ -24,7 +24,7 @@ int main() {
                 printf("Fantasia [S/N]? ");
                 scanf(" %c", &fantasia);
 
-                if (fantasia == 'S' || fantasia == 's') {
+                if (fantasia == 'S' || fantasia == 's') {\
                     printf("Você deve assistir Game of Thrones\n");
                 } else {
                     printf("Desculpe! Não tenho série para indicar\n");
