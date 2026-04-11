@@ -1,0 +1,185 @@
+#include <stdio.h>
+
+int main()
+{
+    char a;
+
+    printf("Drama? (Responda com S ou N)\n");
+    scanf(" %c", &a);
+
+    if (a == 'S' || a == 's') // Primeiro laço 
+    {
+        printf("Aventura? (S/N)\n");
+        scanf(" %c", &a);
+        
+        if (a == 'S' || a == 's')
+        {
+            printf("Suspense? (S/N)\n");
+            scanf(" %c", &a);
+            
+            if (a == 'S' || a == 's')
+            {
+                printf("Te indico LOST.\n");
+            }
+            else if (a == 'N' || a == 'n') // Se não for suspense, ele pula para cá.
+            {
+                printf("Fantasia? (S/N)\n");
+                scanf(" %c", &a);
+                if (a == 'S' || a == 's')
+                {
+                    printf("Te indico Game of Thrones.\n");
+                }
+            }
+        }
+        else if (a == 'N' || a == 'n') // Se não for aventura, ele pula para cá.
+        {
+            printf("Misterio? (S/N)\n");
+            scanf(" %c", &a);
+            
+            if (a == 'S' || a == 's')
+            {
+                printf("SCI-FI? (S/N)\n");
+                scanf(" %c", &a);
+                
+                if (a == 'S' || a == 's')
+                {
+                    printf("Te indico X-Files.\n");
+                }
+                else if (a == 'N' || a == 'n') // Se não for sci-fi, ele vem para cá.
+                {
+                    printf("Medico? (S/N)\n");
+                    scanf(" %c", &a);
+                    if (a == 'S' || a == 's')
+                    {
+                        printf("Te indico House M.D.\n");
+                    }
+                }
+            }
+            else if (a == 'N' || a == 'n') // Se não for mistério, ele vem para cá.
+            {
+                printf("Politico? (S/N)\n");
+                scanf(" %c", &a);
+                
+                if (a == 'S' || a == 's')
+                {
+                    printf("Te indico House of Cards.\n");
+                }
+                else if (a == 'N' || a == 'n')
+                {
+                    printf("Crime? (S/N)\n");
+                    scanf(" %c", &a);
+                    if (a == 'S' || a == 's')
+                    {
+                        printf("Te indico Breaking Bad.\n");
+                    }
+                }
+            }
+        }
+    }
+    
+    else if (a == 'N' || a == 'n') // Se não for drama, ele vem para cá.
+    {
+        printf("Comedia? (S/N)\n");
+        scanf(" %c", &a);
+        
+        if (a == 'S' || a == 's')
+        {
+            printf("Besteirol? (S/N)\n"); 
+            scanf(" %c", &a);
+            
+            if (a == 'S' || a == 's')
+            {
+                printf("Te indico The Office.\n");
+            }
+            else if (a == 'N' || a == 'n')
+            {
+                printf("Romance? (S/N)\n"); // Se não for Besteirol, ele vem para cá.
+                scanf(" %c", &a);
+                
+                if (a == 'S' || a == 's')
+                {
+                    printf("Te indico How I Met Your Mother.\n");
+                }
+                else if (a == 'N' || a == 'n')
+                {
+                    printf("Musical? (S/N)\n"); // Se não for Romance, ele vem para cá.
+                    scanf(" %c", &a);
+                    
+                    if (a == 'S' || a == 's')
+                    {
+                        printf("Te indico Glee.\n");
+                    }
+                    else if (a == 'N' || a == 'n')
+                    {
+                        printf("Nerd? (S/N)\n"); // Se não for Musical, ele vem para cá.
+                        scanf(" %c", &a);
+                        if (a == 'S' || a == 's')
+                        {
+                            printf("Te indico The Big Bang Theory.\n");
+                        }
+                    }
+                }
+            }
+        }
+        else if (a == 'N' || a == 'n') // Se não for drama e nem comédia, ele vem para cá.
+        {
+            printf("Acão? (S/N)\n");
+            scanf(" %c", &a);
+            
+            if (a == 'S' || a == 's')
+            {
+                printf("Drama? (S/N)\n");
+                scanf(" %c", &a);
+                
+                if (a == 'S' || a == 's')
+                {
+                    printf("Misterio? (S/N)\n");
+                    scanf(" %c", &a);
+                    
+                    if (a == 'S' || a == 's')
+                    {
+                        printf("Te indico Homeland.\n");
+                    }
+                    else if (a == 'N' || a == 'n') // Se não for misterio, ele vem para cá.
+                    {
+                        printf("Terror? (S/N)\n");
+                        scanf(" %c", &a);
+                        if (a == 'S' || a == 's')
+                        {
+                            printf("Te indico American Horror Story.\n");
+                        }
+                    }
+                }
+                else if (a == 'N' || a == 'n') // Se não for drama, ele vem para cá.
+                {
+                    printf("Policial? (S/N)\n");
+                    scanf(" %c", &a);
+                    
+                    if (a == 'S' || a == 's')
+                    {
+                        printf("Te indico The Rookie.\n");
+                    }
+                    else if (a == 'N' || a == 'n') // Se não for policial, ele vem para cá.
+                    {
+                        printf("Crime? (S/N)\n");
+                        scanf(" %c", &a);
+                        if (a == 'S' || a == 's')
+                        {
+                            printf("Te indico Dexter.\n");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                printf("Desculpe, nao tenho mais indicacoes para esse perfil!\n");
+            }
+        }
+    }
+    else
+    {
+        printf("Entrada Invalida!\n");
+    }
+
+    return 0;
+}
